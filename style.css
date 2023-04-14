@@ -17,3 +17,81 @@ p {
   width: 100%;
   font-weight: 100;
 }
+h5 {
+  color: #CCC;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0px 0px;
+  text-align: center;
+}
+.links-button {
+  font-family: Roboto, sans-serif ;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0.75em 1.25em;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  width: 80px;
+  color: black;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  box-shadow: 2px 2px;
+}
+.tile-space {
+  background: linear-gradient(-45deg, #F0C1E1, #290A1F);
+  padding: 40px;
+  margin: 0px;
+}
+
+.tile {
+  display: flex;
+//  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#tile-news,
+#tile-fun {
+  width: 270px;
+  padding: 1em 2em 2em 2em;
+  margin: 0.5em;
+  color: whitesmoke;
+  border-radius: 0px 35px 35px 70px;
+  display: inline-block;
+}
+#tile-news {
+ background: linear-gradient(135deg, #FFD699,  #FF9900);
+}
+#tile-fun {
+ background: linear-gradient(135deg, #006666, #b3ffff);
+}
+
+.links {
+  margin: 1em 0;
+  display: none;
+}
+.active {
+  background-color: #333333;
+  color: whitesmoke;
+}
+
+a:link {
+    color: gainsboro;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:visited {
+    color: silver;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: lightslategray;
+    background-color: transparent;
+    text-decoration: underline;
+}
