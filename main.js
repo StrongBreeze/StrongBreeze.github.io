@@ -4,3 +4,4 @@ function main(){
     $(this).toggleClass('active');
 });
 };
+$(document).ready(main);
