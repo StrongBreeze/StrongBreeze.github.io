@@ -11,7 +11,7 @@ var curIndex = 0;
     slider = document.getElementById("slider");
     slides = slider.childNodes; //get a hook on all child elements, this is live so anything we add will get listed
     imgArray = [
-        'Marlow.jpg',
+        'marlow.jpg',
         'Warborrow.jpg'
         ];
     
