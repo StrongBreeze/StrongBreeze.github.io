@@ -11,8 +11,8 @@ var curIndex = 0;
     slider = document.getElementById("slider");
     slides = slider.childNodes; //get a hook on all child elements, this is live so anything we add will get listed
     imgArray = [
-        'bickleyhall_sb_hero.jpg',
-        'chobham_sb_hero.jpg'
+        'Marlow.jpg',
+        'Warborrow.jpg'
         ];
     
 // Dynamically add each slideshow image frame into the DOM;
