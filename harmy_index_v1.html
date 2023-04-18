@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Harmonograph</title>
+	<meta name="description" content="A JavaScript Twin-Elliptic Harmonograph Simulation">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="harmy.ico">
+	<style type="text/css">
+
+
+		html, body, footer, header, a {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline; }
+/* class selectors */
+		body {background-color: white ; color: #5b5b53 ; font-size: 75%; text-align:center; 
+			font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;}
+		a {color:white; text-decoration:none;}
+		a:visited {color:green;}
+		a:hover {color:red;}
+		p {margin:0 0 .8em 0}
+
+		h2 {	font-family: "Century Gothic",Gotham,"Helvetica Neue",Helvetica; 
+  			font-weight: 400;
+  			line-height: 25px;
+  			padding-left: 10px;
+  			width: 100%;
+  			position: left;
+			font-size: 1.8em; margin: .8em 2em .8em 2em;}   
+		table {background-color: rgba(200,200,200,0.6);
+			border-bottom: 3px solid #9E9E9E; border-right: 3px solid #9E9E9E;
+			border-top: 3px solid #d9d9d9; border-left: 3px solid #d9d9d9;}
+		tr.head {text-align: center; padding-bottom: 1em;}
+		td.label {text-align: right; padding-right: 1em;}
+		input {width: 5em; text-align: center; background: none; color: #a551a3; border-color: #ededde ; border-width: 2px;}
+		input.error {background-color:red;}
+		button {width: 10em; text-align: center; background: #ededde ; color: #a551a3 ; border-color: #darkgrey; border-width: 3px; margin 2px;}
+		.copy {font-size: .8em; color:orange;}
+/* id selectors */
+		#frame {position: relative; text-align:left; width: 800px; margin: 10px; padding: 10px; border: 5px solid #9E9E9E; background-color: white;}
+		#header {position: relative; text-align:left; background-color: #ededde; border: 2px solid #9E9E9E;}
+                #buttonBox{ display: block;  margin: 0px;  padding: 5px 5px 5px 5px; border: 2px solid #9E9E9E; background-color: #ededde;}
+		#settings {position: absolute; top: 150px; left: 30px; width: 380px; text-align:left;}
+		#footer {position: relative;  text-align: left; background-color: white;}
+                #graphContainer {width: 800px; background-color: #fcfcdb;}
+	</style>
+
+	<script type="text/javascript" src="harmonograph_v1.js"></script>
+</head>
+
+<body onload="init()">
+<div id="frame">
+	<div id="header">
+	<h2> A twin-elliptic harmonograph - possibly! </h2>
+	</div>
+        <div id="buttonBox">
+<!--		<div id="buttons"> -->
+			<button id="startButton" onclick="startStop();">Stop</button>
+			<button onclick="init();">Clear page</button>
+			<button onclick="showSettings();">Show/Hide settings</button>
+			<button onclick="speed();">Speed</button><span id="spf">&nbsp; 1x</span>
+<!--		</div>	-->
+        </div>
+
+        <div id="graphContainer">
+		<canvas id="graph" width="800" height="800"> </canvas>
+        </div>
+
+	<div id="settings">
+		<form>
+			<table>
+				<tr class="head">
+					<td> </td>
+					<td>Pendulum 1</td><td>Pendulum 2</td>
+				</tr>
+				<tr>
+					<td class="label">&nbsp;Amplitude x</td>
+					<td><input id="a1x" value="70" onchange="inputChange()"/> </td>
+					<td><input id="a2x" value="300" onchange="inputChange()"/> </td>
+					<td>&nbsp;px</td>
+				</tr>
+				<tr>
+					<td class="label">Amplitude y</td>
+					<td><input id="a1y" value="135" onchange="inputChange()"/> </td>
+					<td><input id="a2y" value="200" onchange="inputChange()"/> </td>
+					<td>&nbsp;px</td>
+				</tr>
+				<tr>
+					<td class="label">Phase x</td>
+					<td><input id="p1x" value="-90" onchange="inputChange()"/> </td>
+					<td><input id="p2x" value="90" onchange="inputChange()"/> </td>
+					<td>&nbsp;&deg;</td>
+				</tr>
+				<tr>
+					<td class="label">Phase y</td>
+					<td><input id="p1y" value="45" onchange="inputChange()"/> </td>
+					<td><input id="p2y" value="25" onchange="inputChange()"/> </td>
+					<td>&nbsp;&deg;</td>
+				</tr>
+				<tr>
+					<td class="label">Damping</td>
+					<td><input id="td1" value="0.001" onchange="inputChange()"/> </td>
+					<td><input id="td2" value="0.001" onchange="inputChange()"/> </td>
+					<td>&nbsp;factor</td>
+				</tr>
+				<tr>
+					<td class="label">Frequency</td>
+					<td><input id="f1" value="1" onchange="inputChange()"/> </td>
+					<td><input id="f2" value="0.669" onchange="inputChange()"/> </td>
+					<td>&nbsp;Hz&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+
+	<div id="footer">
+	<p> Footnote: The plot area is 800px by 800px, anything outside this does not get displayed. 
+            Therefore adjust the amplitudes so that the plot stays in this area. 
+            All initial amplitudes, frequencies and phases should be different and not integer multiples for the most complicated (interesting) patterns.
+             <a href="http://andygiger.com/" target="_blank">Andy Giger</a> provides more sophisticated simulators.
+<a href="http://www.worldtreesoftware.com/harmonograph-intro.html" target="_blank">worldtree</a> has a nice tutorial on harmonographs and a simulator that you might prefer to mine. And <a href="http://www.anitachowdry.com/iron-genie-drawings/4582085804" target="_blank">Iron Genie</a> provides examples of patterns you may, or may not, be able to reproduce.</p>
+
+	</div>
+</div> <!-- frame -->
+
+</body>
+</html>
+
+
