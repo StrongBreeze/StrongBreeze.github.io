@@ -131,3 +131,27 @@ a:active {
   background: linear-gradient(0deg, #E0CD97, #BCB47A);
   height: 270px;
 }
+#videoSpace{
+width: 100%;
+padding: 0px;
+margin: 0px;
+//border: 10px solid green;
+}
+#videoPlace {
+width: 320px;
+height: 180px;
+ border: 2px solid white;
+  margin: 0px;
+  padding: 0px;
+}
+#bigBox {
+display: inline-block;
+width: 324px;
+height: 324px;
+background: linear-gradient(135deg, #a9a9a9, #808080);
+// background-color: #a9a9a9;
+ border: 2px solid black;
+  margin: 15px;
+  padding: 30px;
+vertical-align: top;
+}
