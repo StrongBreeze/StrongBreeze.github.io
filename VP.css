@@ -1,0 +1,79 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1 {
+  color: Black;
+  font-family: "Century Gothic",Gotham,"Helvetica Neue",Helvetica;  font-size: 30px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0 auto;
+  padding-left: 10px;
+  width: 100%;
+  position: left;
+}
+
+h2 {
+  color: Black;
+  font-family: "Century Gothic",Gotham,"Helvetica Neue",Helvetica;  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 auto;
+  padding-left: 10px;
+  width: 100%;
+  position: left;
+}
+
+p {
+  font-family: "Century Gothic",Gotham,"Helvetica Neue",Helvetica;
+  font-size: 20px;
+  color: white;
+  line-height: 1.7em;
+  padding-top: 20px; 
+  text-align: left;
+  width: 100%;
+  font-weight: 100;
+}
+
+#videoSpace{
+width: 100%;
+padding: 0px;
+margin: 0px;
+//border: 10px solid green;
+}
+
+#videoPlace {
+width: 320px;
+height: 180px;
+ border: 2px solid white;
+  margin: 0px;
+  padding: 0px;
+}
+#bigBox {
+display: inline-block;
+width: 324px;
+height: 324px;
+background: linear-gradient(135deg, #a9a9a9, #808080);
+// background-color: #a9a9a9;
+ border: 2px solid black;
+  margin: 15px;
+  padding: 30px;
+vertical-align: top;
+}
