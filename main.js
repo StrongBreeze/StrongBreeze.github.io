@@ -94,4 +94,4 @@ function(){
         };
         setInterval(doScroll, 20);
         tweenToNewSpeed(controller.fullSpeed);
-    }
+    });
