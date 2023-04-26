@@ -10,7 +10,7 @@
           <div id="slider"></div>
         </div>
      </div>
-   </header> 
+    </header> 
   </head>
   <body>
     <h1>StrongBreeze</h1>
@@ -34,31 +34,31 @@
            <li><a href="http://www.yr.no/place/United_Kingdom/England/London/" target="_blank">Weather from YR</a></li>
            <li><a href="http://www.bbc.co.uk/news" target="_blank">BBC</a></li>
          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <div id="khakiBox">
-      <div id="scroller" style="width: 1500px; height: 150px; margin: 0 auto;"></div>
-      <div class="innerScrollArea">
-        <ul>
-          <!-- Define photos here -->
-          <li><img src="scroller-1.jpg" width="222" height="150" title="L'Estaque by André Derain"/></li>
-          <li><img src="scroller-2.jpg" width="186" height="150" title="Burn in Spate, Argyll by Judith I Bridgland"/></li>
-          <li><img src="scroller-3.jpg" width="204" height="150" title="Bridget Riley"/></li>
-          <li><img src="scroller-4.jpg" width="185" height="150" title="Marilyn by Lego"/></li>
-          <li><img src="scroller-5.jpg" width="399" height="150" title="Unknown by Unknown"/></li>
-          <li><img src="scroller-6.jpg" width="207" height="150" title="Bristol by Unknown"/></li>
-        </ul>
+    <footer>
+      <div id="khakiBox">
+        <div id="scroller" style="width: 1500px; height: 150px; margin: 0 auto;"></div>
+        <div class="innerScrollArea">
+          <ul>
+            <!-- Define photos here -->
+            <li><img src="scroller-1.jpg" width="222" height="150" title="L'Estaque by André Derain"/></li>
+            <li><img src="scroller-2.jpg" width="186" height="150" title="Burn in Spate, Argyll by Judith I Bridgland"/></li>
+            <li><img src="scroller-3.jpg" width="204" height="150" title="Bridget Riley"/></li>
+            <li><img src="scroller-4.jpg" width="185" height="150" title="Marilyn by Lego"/></li>
+            <li><img src="scroller-5.jpg" width="399" height="150" title="Unknown by Unknown"/></li>
+            <li><img src="scroller-6.jpg" width="207" height="150" title="Bristol by Unknown"/></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <h5>The StrongBreeze dashboard &copy; 2023</h5>
-    <h5>Be warned: in some browsers and on some devices this won't look good (an opinion) or work (a fact).</h5>
-  </footer>
-<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-<script src='main.js'></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script type="text/javascript">
+      <h5>The StrongBreeze dashboard &copy; 2023</h5>
+      <h5>Be warned: in some browsers and on some devices this won't look good (an opinion) or work (a fact).</h5>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src='main.js'></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
     $(function(){
         var scroller = $('#scroller div.innerScrollArea');
         var scrollerContent = scroller.children('ul');
@@ -101,5 +101,6 @@
         setInterval(doScroll, 20);
         tweenToNewSpeed(controller.fullSpeed);
     });
-</script></body>
+  </script>
+  </body>
 </html>
