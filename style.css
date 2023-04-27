@@ -39,11 +39,11 @@ h5 {
   text-align: center;
   box-shadow: 2px 2px;
 }
-#tile ul {
-  list-style: none;
+.tile-ul {
+  li.st-style: none;
   padding: 0px;
 }
-#tile li {
+.tile-li {
   border-radius: 0px 6px 6px 12px;
   background-color: #333333;
   margin: 5px 5px 5px 5px;
