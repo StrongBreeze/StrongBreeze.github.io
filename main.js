@@ -49,13 +49,16 @@ $(function(){
         tweenToNewSpeed(controller.fullSpeed);
     });
 
+// Here is the list of images for the slider (bad name) that will be at the top of the page;
 var curIndex = 0;
     imgDuration = 10000;
     slider = document.getElementById("slider");
     slides = slider.childNodes; //get a hook on all child elements, this is live so anything we add will get listed
     imgArray = [
-        'marlow.jpg',
-        'Warborrow.jpg'
+        'Marlow.jpg',
+        'Warborrow.jpg',
+        'LittleMarlow.jpg',
+        'GrimsDitch.jpg'
         ];
     
 // Dynamically add each slideshow image frame into the DOM;
