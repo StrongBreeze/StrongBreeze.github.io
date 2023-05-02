@@ -8,14 +8,16 @@ h1 {
   width: 100%;
   position: left;
 }
-p {
-  font-family: Roboto, sans-serif ;
-  font-size: 20px;
-  color: Pink;
-  line-height: 1.7em;
+h3 {
+  color: #FFF;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0px 0px;
   text-align: left;
-  width: 100%;
-  font-weight: 100;
+  width: 150px;
+  display: inline-block;
 }
 h5 {
   color: #CCC;
@@ -25,6 +27,15 @@ h5 {
   line-height: 30px;
   margin: 0px 0px;
   text-align: center;
+}
+p, ul {  
+  -family: Roboto, sans-serif ;
+  font-size: 20px;
+  color: Pink;
+  line-height: 1.7em;
+  text-align: left;
+  width: 100%;
+  font-weight: 100;
 }
 .links-button {
   font-family: Roboto, sans-serif ;
@@ -75,7 +86,6 @@ h5 {
 #tile-fun {
  background: linear-gradient(135deg, #006666, #b3ffff);
 }
-
 .links {
   margin: 1em 0;
   display: none;
