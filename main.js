@@ -58,7 +58,7 @@ var curIndex = 0;
         'Marlow.jpg',
         'Warborrow.jpg',
         'LittleMarlow.jpg',
-        'GrimsDitch.jpg'
+        'Grims_Ditch.jpg'
         ];
     
 // Dynamically add each slideshow image frame into the DOM;
