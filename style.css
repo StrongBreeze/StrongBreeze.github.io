@@ -29,7 +29,7 @@ h5 {
   text-align: center;
 }
 p, ul {  
-  -family: Roboto, sans-serif ;
+  font-family: Roboto, sans-serif ;
   font-size: 20px;
   color: Pink;
   line-height: 1.7em;
@@ -95,7 +95,12 @@ p, ul {
   color: whitesmoke;
 }
 
-a:link {
+a {   
+  font-family: Roboto, sans-serif ;
+  font-size: 20px
+}
+
+  a:link {
     color: gainsboro;
     background-color: transparent;
     text-decoration: underline;
