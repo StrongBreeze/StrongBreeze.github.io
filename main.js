@@ -57,7 +57,8 @@ var curIndex = 0;
     imgArray = [
         'Marlow.jpg',
         'Warborrow.jpg',
-        'LittleMarlow.jpg'
+        'LittleMarlow.jpg',
+        'Fawley.jpg'
         ];
     
 // Dynamically add each slideshow image frame into the DOM;
