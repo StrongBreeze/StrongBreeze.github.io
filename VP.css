@@ -41,6 +41,16 @@ h2 {
   position: left;
 }
 
+h5 {
+  color: #CCC;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0px 0px;
+  text-align: center;
+}
+
 p {
   font-family: "Century Gothic",Gotham,"Helvetica Neue",Helvetica;
   font-size: 20px;
