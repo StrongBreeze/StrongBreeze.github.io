@@ -58,6 +58,7 @@ var curIndex = 0;
         'Marlow.jpg',
         'Warborrow.jpg',
         'LittleMarlow.jpg',
+        'Herm.jpg',
         'Fawley.jpg',
         'Croatia.jpg'
         ];
