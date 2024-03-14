@@ -60,7 +60,8 @@ var curIndex = 0;
         'LittleMarlow.jpg',
         'Herm.jpg',
         'Fawley.jpg',
-        'Croatia.jpg'
+        'Croatia.jpg',
+        'Stonehenge.jpg'
         ];
     
 // Dynamically add each slideshow image frame into the DOM;
