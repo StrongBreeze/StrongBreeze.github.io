@@ -94,6 +94,9 @@ p, ul {
 #tile-fun {
  background: linear-gradient(135deg, #006666, #b3ffff);
 }
+#tile-clubs {
+ background: linear-gradient(135deg, #d65454, #fccfcf);
+}
 .links {
   margin: 1em 0;
   display: none;
