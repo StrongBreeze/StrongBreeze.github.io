@@ -151,10 +151,9 @@ a:active {
   width: 1500px;
   height: 250px;
   border: 2px solid #9E9E9E;
-  overflow: hidden; /* Replaces overflow: hidden or clip; */
+  overflow: hidden;
   background-color: white;
 }
-
 #khakiBox {
   width: 100%;
   background: linear-gradient(0deg, #E0CD97, #BCB47A);
@@ -163,7 +162,6 @@ a:active {
   padding-bottom: 8px;
   margin: 0px;
 }
-
 #videoSpace{
 width: 100%;
 padding: 0px;
