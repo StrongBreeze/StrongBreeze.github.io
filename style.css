@@ -154,6 +154,7 @@ a:active {
   overflow: hidden;
   background-color: white;
 }
+/*
 #khakiBox {
   width: 100%;
   background: linear-gradient(0deg, #E0CD97, #BCB47A);
@@ -161,6 +162,17 @@ a:active {
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 0px;
+}
+Replaced at suggestion of AI by the following
+*/
+.khakiBox {
+  width: 100vw;          /* Forces the box to be exactly 100% of the screen width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;    /* Pulls the box back to the exact left edge of the screen */
+  margin-right: -50vw;   /* Pulls the box back to the exact right edge of the screen */
+  box-sizing: border-box; 
 }
 #videoSpace{
 width: 100%;
