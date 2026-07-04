@@ -154,7 +154,7 @@ a:active {
   overflow: hidden;
   background-color: white;
 }
-#khakiBox {
+#khakiBox { 
   width: 100%;
   background: linear-gradient(0deg, #E0CD97, #BCB47A);
   height: 254px;
