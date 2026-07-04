@@ -151,7 +151,7 @@ a:active {
   width: 1500px;
   height: 250px;
   border: 2px solid #9E9E9E;
-  overflow: hidden;
+  overflow: clip; /* Replaces overflow: hidden; */
   background-color: white;
 }
 /*
