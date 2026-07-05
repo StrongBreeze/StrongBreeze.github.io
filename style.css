@@ -141,7 +141,8 @@ a:active {
     top:0;
 //    left:0;
     opacity:0;
-    object-fit: fill;
+    object-fit: none;
+    object-position: 50% 50%;
 /* or
   object-fit: contain; cover; none; or scale-down */
 }
