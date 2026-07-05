@@ -141,9 +141,9 @@ a:active {
     top:0;
 //    left:0;
     opacity:0;
-    object-fit: contain;
+    object-fit: cover;
 /* or
-  object-fit: cover; */
+  object-fit: contain; */
 }
 #slider img.fadeIn {
     opacity:1;
