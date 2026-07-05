@@ -149,6 +149,7 @@ a:active {
   display: block;
   margin: auto;
   width: 1500px;
+  max-width: 90%;
   height: 250px;
   border: 2px solid #9E9E9E;
   overflow: hidden;
