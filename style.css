@@ -141,7 +141,7 @@ a:active {
     top:0;
 //    left:0;
     opacity:0;
-    object-fit: cover;
+    object-fit: fill;
 /* or
   object-fit: contain; */
 }
