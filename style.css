@@ -149,7 +149,7 @@ a:active {
 }
 */
 /* CHANGE #slider img TO #blank img SO THEY RESIZE TO THIS CONTAINER */
-#blank img {
+#slider img {
     transition: opacity 3.0s;
     position: absolute;
     top: 0;
@@ -164,7 +164,7 @@ a:active {
     opacity: 0;
 }
 
-#blank img.fadeIn {
+#slider img.fadeIn {
     opacity: 1;
 }
 
