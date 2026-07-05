@@ -143,7 +143,7 @@ a:active {
     opacity:0;
     object-fit: fill;
 /* or
-  object-fit: contain; */
+  object-fit: contain; cover; none; or scale-down */
 }
 #slider img.fadeIn {
     opacity:1;
